@@ -6,9 +6,8 @@
 #     \/  \/ \___|_.__/|___/\___|\__,_|_|  \___|_| |_|
 # Author: Ayush Jaayswal
 # website: ayusjayswal.github.io
-# Github: github.com/ayusjayaswal/scripts/search
+# Github: github.com/ayusjayaswal/scripts/blob/main/search
 #
-
 declare -A websearch
 # Search Engines
 websearch[Bing]="https://www.bing.com/search?q="
@@ -49,12 +48,9 @@ websearch[Sourceforge]="https://sourceforge.net/directory/?q="
 websearch[Stackoverflow]="https://stackoverflow.com/search?q="
 # Etc
 
-
 engine=$(printf '%s\n' "${!websearch[@]}" | sort | dmenu -i -p 'ﰍ Choose search engine: ' "$@" -l 10) || exit 1
-
 url="${websearch["${engine}"]}"
 query=$(echo "$engine" | dmenu -p 'Enter search query:')
 query="$(echo -n "${query}" )"
 browser=$(printf "brave \nfirefox \nvieb \nqutebrowser"|dmenu -l 5 -p "Choose Browser")
 $browser "${url}${query}"
- 
