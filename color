@@ -5,6 +5,7 @@
 # \____/\____/_/\____/_/
 # Author: Ayush Jayaswal
 # Website: ayusjayaswal.github.io
+# Github: github.com/ayusjayaswal/scripts/color
 #
 declare -A colpick
 colpick[Black]="#282828"
