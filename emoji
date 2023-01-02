@@ -7,7 +7,7 @@
 #                     \|
 # Author: Ayush Jayaswal
 # Website: ayusjayaswal.github.io
-# Github: github.com/ayusjayaswal/scripts/emoji
+# Github: github.com/ayusjayaswal/scripts/blob/main/emoji
 
 declare -A emoji
 emoji[grinning face]="😀"
