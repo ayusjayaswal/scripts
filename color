@@ -1,0 +1,35 @@
+#    ______      __
+#   / ____/___  / /___  _____
+#  / /   / __ \/ / __ \/ ___/
+# / /___/ /_/ / / /_/ / /
+# \____/\____/_/\____/_/
+# Author: Ayush Jayaswal
+# Website: ayusjayaswal.github.io
+#
+declare -A colpick
+colpick[Black]="#282828"
+colpick[Grey]="#928374"
+colpick[Dark Red]="#cc241d"
+colpick[Light Red]="#fb4934"
+colpick[Dark Green]="#98971a"
+colpick[Light Green]="#b8bb26"
+colpick[Dark Aqua]="#689d6a"
+colpick[Light Aqua]="#8ec07c"
+colpick[Lemon Yellow]="#fabd2f"
+colpick[Yellow Ochre]="#b57614"
+colpick[Blue]="#488588"
+colpick[Magenta]="#b16286"
+colpick[Sky Blue]="#83a598"
+colpick[White]="#f9f5d7"
+colpick[Orange]="#fe8019"
+colpick[Purple]="#d3869b"
+
+setcol=$(printf '%s\n' "${!colpick[@]}" | sort | dmenu -i -l 30)
+
+if [ "$setcol" ]; then
+    chosen=$(printf '%s\n' "${colpick["${setcol}"]}")
+    printf "$chosen" | xclip -selection clipboard
+	notify-send "Color code '$chosen' copied to clipboard." &
+else
+    echo "Program Terminated" && exit 0
+fi
