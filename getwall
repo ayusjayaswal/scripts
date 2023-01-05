@@ -1,7 +1,4 @@
 #!/bin/sh
-
-# https://github.com/pystardust/waldl
-# script to find and download wallpapers from wallhaven
 version="0.0.1"
 
 # Usage:
@@ -10,11 +7,7 @@ version="0.0.1"
 # after the thumbnails are cached, sxiv would open up with the thumbnails
 # Select the wallpapers using `m` on the image. ( marking the image in sxiv )
 # press `q` to quit sxiv, the marked images would start downloading
-
-####################
 ## User variables ##
-####################
-
 # the dir where wallpapers are stored
 walldir="$HOME/.wallpapers"
 # the dir used to cache thumbnails
