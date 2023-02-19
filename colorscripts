@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+ran=$(ls /usr/local/bin/color-scripts/ | shuf | sed -n '1p')
+/usr/local/bin/color-scripts/$ran
