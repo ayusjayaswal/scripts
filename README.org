@@ -10,7 +10,7 @@ These are Collection of Shell scripts I often use
 #+end_src
 2. Move to PATH
 #+begin_src sh
-  cp ~/scripts/* /use/local/bin/
+  cp ~/scripts/* /usr/local/bin/
 #+end_src 
 
 * Contents
