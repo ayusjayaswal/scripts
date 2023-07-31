@@ -3,14 +3,15 @@
 * Scripts
 These are Collection of Shell scripts I often use
 * Installation
-+ [ ] Clone the repository
+
+1. Clone the repository
 #+begin_src sh
   cd && git clone https://github.com/ayusjayaswal/scripts.git
 #+end_src
-+ [ ] Move to PATH
-  #+begin_src sh
-    cp ~/scripts/* /use/local/bin/
-  #+end_src 
+2. Move to PATH
+#+begin_src sh
+  cp ~/scripts/* /use/local/bin/
+#+end_src 
 
 * Contents
 *** Color
