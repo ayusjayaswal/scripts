@@ -1,0 +1,68 @@
+#+author:Ayush Jayaswal
+#+title:Ayush's Shell Scripts
+* Scripts
+These are Collection of Shell scripts I often use
+* Installation
++ [ ] Clone the repository
+#+begin_src sh
+  cd && git clone https://github.com/ayusjayaswal/scripts.git
+#+end_src
++ [ ] Move to PATH
+  #+begin_src sh
+    cp ~/scripts/* /use/local/bin/
+  #+end_src 
+
+* Contents
+*** Color
+A script that allows you to put Hex codes of gruvbox colors in your clipboard
+**** Note
+The Script is only compatible with X11 Environment for Wayland, replace dmenu with wofi etc.
+**** Dependencies
+***** Arch
+#+begin_src sh
+  sudo pacman -S dmenu xclip
+#+end_src
+***** Debian
+#+begin_src sh
+  sudo apt install dmenu xclip
+#+end_src
+***** Fedora
+#+begin_src sh
+  sudo dnf install dmenu xclip
+#+end_src
+*** Colorscripts
+A Script that prints cool ASCII Art on your terminal Randomly.
+*** Emoji
+A Script that allows to select an emoji and copy it to clipboard
+**** Note
+The Script is only compatible with X11 Environment for Wayland, replace dmenu with wofi etc.
+**** Dependencies
+***** Arch
+#+begin_src sh
+  sudo pacman -S dmenu xclip
+#+end_src
+***** Debian
+#+begin_src sh
+  sudo apt install dmenu xclip
+#+end_src
+***** Fedora
+#+begin_src sh
+  sudo dnf install dmenu xclip
+#+end_src
+*** Search
+A Script that allows you to Quickly Search among important websites and search engines directly and open in desired browser.
+**** Note
+The Script is only compatible with X11 Environment for Wayland, replace dmenu with wofi etc.
+**** Dependencies
+***** Arch
+#+begin_src sh
+  sudo pacman -S dmenu xclip
+#+end_src
+***** Debian
+#+begin_src sh
+  sudo apt install dmenu xclip
+#+end_src
+***** Fedora
+#+begin_src sh
+  sudo dnf install dmenu xclip
+#+end_src
