@@ -12,7 +12,7 @@ case "$choice" in
         warp-cli disconnect
         notify-send "warp" "disconnected from cloudflare warp"
         ;;
-    "check ip & warp info")
+    "info")
         response=$(curl -s https://www.cloudflare.com/cdn-cgi/trace)
         ip=$(echo "$response" | grep "^ip=" | cut -d= -f2)
         location=$(echo "$response" | grep "^loc=" | cut -d= -f2)
